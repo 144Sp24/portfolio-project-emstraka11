@@ -5,16 +5,37 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3 {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for header area */
+.round {
+    border-radius: 8px;
+}
+
 /* Style rules for body and images */
 body {
     background-color: #ebf4e7;
-    
+
 }
 
 img {
@@ -24,7 +45,7 @@ img {
 
 /* Style rules for navigation area */
 nav ul {
-   list-style-type: none; 
+    list-style-type: none;
     text-align: center;
     margin: 0;
 }
@@ -34,7 +55,7 @@ nav li {
     display: inline-block;
     text-align: center;
     font-size: 1.5em;
-    font-family: Veranda, Arial, sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: bold;
 }
 
@@ -48,15 +69,9 @@ nav li a {
 }
 
 /* Style rule for main content */
-main{
-    
-}
+main {}
 
 /* Style rule for footer content */
-footer p {
-    
-}
+footer p {}
 
-footer p a{
-    
-}
+footer p a {}
