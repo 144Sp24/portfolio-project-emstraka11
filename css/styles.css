@@ -18,6 +18,8 @@ h3 {
     border: 0;
 }
 
+/* Style rules for mobile viewport */
+
 /* Style rules to show mobile class and hide tab-desk class */
 .mobile {
     display: block;
@@ -39,11 +41,16 @@ body {
 }
 
 img {
-    max-width: 100%;
+    max-width: 40%;
     display: block;
 }
 
 /* Style rules for navigation area */
+nav {
+    width: 100%;
+    margin: auto;
+}
+
 nav ul {
     list-style-type: none;
     text-align: center;
@@ -53,19 +60,88 @@ nav ul {
 nav li {
     list-style-type: none;
     display: inline-block;
-    text-align: center;
     font-size: 1.5em;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
 }
 
 nav li a {
-    display: block;
+    /*display: block;*/
     list-style-type: none;
-    text-align: center;
     text-decoration: none;
     color: #000000;
-    padding: 0.5em 0.5em;
+    padding: 0em 0.5em;
+}
+
+/* Media Query for Mobile Viewport */
+@media screen and (min-width:0px) {
+
+    /* Mobile Viewport: Style rules for header */
+    .mobile h1 {
+        font-size: 20px;
+    }
+
+    .mobile h3 {
+        font-size: 10px;
+    }
+
+    /* Mobile Viewport: Style rules for nav */
+    nav li {
+        font-size: 12px;
+    }
+
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px) {
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    tab-desk {
+        display: block;
+    }
+
+    mobile {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rules for header */
+    .mobile h1 {
+        font-size: 40px;
+    }
+    
+    .mobile h3 {
+        font-size: 20px;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+
+    /* Tablet Viewport: Style rules for main area */
+    
+    
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav li a:hover {
+        color: #ebf4e7;
+        background-color: #000000;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 100px),
+print {
+  
+    /* Desktop Viewport: Style rules for nav area */
+    nav li a:hover {
+        color: #ebf4e7;
+        background-color: #000000;
+    }
 }
 
 /* Style rule for main content */
